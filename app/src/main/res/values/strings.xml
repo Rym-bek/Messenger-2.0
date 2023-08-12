@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">Messenger</string>
+
+    <string name="create_group">Создать группу</string>
+    <string name="contacts">Контакты</string>
+    <string name="calls">Звонки</string>
+    <string name="people_nearby">Люди рядом</string>
+    <string name="favorites">Избранное</string>
+    <string name="settings">Настройки</string>
+    <string name="invite_friends">Пригласить друзей</string>
+    <string name="help">Помощь</string>
+    <string name="enu_reference">Справка по ЕНУ</string>
+    <string name="OpenNavDrawer">Открыт</string>
+    <string name="CloseNavDrawer">Закрыт</string>
+    <string name="start_communicate">Начать общение</string>
+
+    <string name="phone_number">Номер телефона</string>
+    <string name="phone_number_description">Введите код страны и свой номер телефона.</string>
+    <string name="country">Страна</string>
+    <string name="select_country">Выберите страну</string>
+    <string name="loginWithEmail">Войти по почте</string>
+    <string name="login">Вход</string>
+    <string name="registration">Регистрация</string>
+    <string name="authorization">Авторизация</string>
+    <string name="mail">Почта</string>
+    <string name="enter">Войти</string>
+
+    <string name="search">Поиск</string>
+    <string name="code">Код</string>
+    <string name="incorrect_code">Некорректный код</string>
+    <string name="user_name">Имя пользователя</string>
+    <string name="find_users">Найти пользователей</string>
+    <string name="message">Сообщение</string>
+    <string name="email">Почта</string>
+    <string name="password">Пароль</string>
+    <string name="repeat_password">Повторите пароль</string>
+    <string name="forgot_password">Забыли пароль?</string>
+
+    <string name="in_app">в сети</string>
+    <string name="select_photo">Выбрать фотографию</string>
+    <string name="account">Аккаунт</string>
+    <string name="nickname">Никнейм</string>
+    <string name="create_nickname">Создать никнейм</string>
+    <string name="set_phone_number">Установить номер телефона</string>
+    <string name="set_user_name">Задать имя пользователя</string>
+    <string name="set_email">Установить почту</string>
+    <string name="about_me">О себе</string>
+    <string name="set_about_me_information">Напишите немного о себе</string>
+
+    <string name="user_nickname">Никнейм пользователя</string>
+    <string name="your_nickname">Ваш никнейм</string>
+    <string name="select_public_name">Вы можете выбрать публичное имя пользователя в <b>studENU</b>. В этом Случай другие люди смогут найти Вас по такому имени и связаться, не зная вашего телефона.\n\nРазрешается использовать символы <b>a-z</b>, <b>0-9</b> и подчёркивания. Минимальная длина - <b>5</b> символов</string>
+    <string name="ok">Ок</string>
+    <string name="change_name">Изменить имя</string>
+    <string name="exit">Выход</string>
+    <string name="alarm">Предупрждение</string>
+    <string name="you_sure_to_exit">Вы уверены в том что хотите выйти?</string>
+    <string name="no">Нет</string>
+    <string name="yes">Да</string>
+    <string name="enter_with_email">Войти по почте</string>
+
+    <string name="name_necessary">Имя (обязательно)</string>
+    <string name="surname_optional">Фамилия (необязательно)</string>
+    <string name="about_description">Вы можете добавить несколько строк о себе. Они будут видны всем, кто откроет Ваш профиль.</string>
+    <string name="offline">Не в сети</string>
+    <string name="online">Онлайн</string>
+    <string name="people_nearby_description">Вы можете быстро обменяться контактами с пользователями поблизости или найти новых друзей</string>
+    <string name="location_enable_description">Вы сможете быстро связаться с теми, кто находится рядом с Вами и обменяться с ним сообщениями.\n\nДля этого необходимо разрешить приложению доступ к геопозиции.</string>
+    <string name="show_me">Показывать меня здесь</string>
+    <string name="meters">м отсюда</string>
+    <string name="enable">Включить</string>
+    <string name="messages">Сообщения</string>
+</resources>

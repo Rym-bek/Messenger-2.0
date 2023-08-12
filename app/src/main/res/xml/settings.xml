@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        app:title="@string/account"
+        app:allowDividerBelow="false"
+        >
+        <Preference
+        app:key="nickname"
+        app:title="@string/nickname"
+        app:summary="@string/create_nickname" />
+
+        <Preference
+            app:key="name"
+            app:title="@string/user_name"
+            app:summary="@string/set_user_name"/>
+
+        <Preference
+            app:key="about"
+            app:title="@string/about_me"
+            app:summary="@string/set_about_me_information"/>
+
+        <Preference
+            app:key="phone_number"
+            app:title="@string/phone_number"
+            app:summary="@string/set_phone_number"/>
+
+        <Preference
+            app:key="email"
+            app:title="@string/email"
+            app:summary="@string/set_email"/>
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

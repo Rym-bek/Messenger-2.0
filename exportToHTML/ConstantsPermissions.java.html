@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>ConstantsPermissions.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #6897bb;}
+.s3 { color: #6a8759;}
+.ln { color: #606366; font-weight: normal; font-style: normal; }
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+ConstantsPermissions.java</font>
+</center></td></tr></table>
+<pre><a name="l1"><span class="ln">1    </span></a><span class="s0">package </span><span class="s1">com.example.messenger.utils.constants</span><span class="s0">;</span>
+<a name="l2"><span class="ln">2    </span></a>
+<a name="l3"><span class="ln">3    </span></a><span class="s0">import </span><span class="s1">java.lang.System</span><span class="s0">;</span>
+<a name="l4"><span class="ln">4    </span></a>
+<a name="l5"><span class="ln">5    </span></a><span class="s1">@kotlin.Metadata(mv = {</span><span class="s2">1</span><span class="s0">, </span><span class="s2">8</span><span class="s0">, </span><span class="s2">0</span><span class="s1">}</span><span class="s0">, </span><span class="s1">k = </span><span class="s2">1</span><span class="s0">, </span><span class="s1">d1 = {</span><span class="s3">&quot;</span><span class="s0">\u0000\u0018\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u0011\n\u0002\u0010\u000e\n\u0002\b\u0006\b\u00c6\u0002\u0018\u0000</span><span class="s3">2</span><span class="s0">\u0002</span><span class="s3">0</span><span class="s0">\u0001</span><span class="s3">B</span><span class="s0">\u0007\b\u0002\u00a2\u0006\u0002\u0010\u0002</span><span class="s3">R</span><span class="s0">\u0019\u0010\u0003\u001a\b\u0012\u0004\u0012\u0002</span><span class="s3">0</span><span class="s0">\u0005</span><span class="s3">0</span><span class="s0">\u0004\u00a2\u0006\n\n\u0002\u0010\b\u001a\u0004\b\u0006\u0010\u0007</span><span class="s3">R</span><span class="s0">\u0019\u0010\t\u001a\b\u0012\u0004\u0012\u0002</span><span class="s3">0</span><span class="s0">\u0005</span><span class="s3">0</span><span class="s0">\u0004\u00a2\u0006\n\n\u0002\u0010\b\u001a\u0004\b\n\u0010\u0007\u00a8\u0006\u000b</span><span class="s3">&quot;</span><span class="s1">}</span><span class="s0">, </span><span class="s1">d2 = {</span><span class="s3">&quot;Lcom/example/messenger/utils/constants/ConstantsPermissions;&quot;</span><span class="s0">, </span><span class="s3">&quot;&quot;</span><span class="s0">, </span><span class="s3">&quot;()V&quot;</span><span class="s0">, </span><span class="s3">&quot;PERMISSIONS_LOCATION&quot;</span><span class="s0">, </span><span class="s3">&quot;&quot;</span><span class="s0">, </span><span class="s3">&quot;&quot;</span><span class="s0">, </span><span class="s3">&quot;getPERMISSIONS_LOCATION&quot;</span><span class="s0">, </span><span class="s3">&quot;()[Ljava/lang/String;&quot;</span><span class="s0">, </span><span class="s3">&quot;[Ljava/lang/String;&quot;</span><span class="s0">, </span><span class="s3">&quot;PERMISSIONS_STORAGE&quot;</span><span class="s0">, </span><span class="s3">&quot;getPERMISSIONS_STORAGE&quot;</span><span class="s0">, </span><span class="s3">&quot;app_debug&quot;</span><span class="s1">})</span>
+<a name="l6"><span class="ln">6    </span></a><span class="s0">public final class </span><span class="s1">ConstantsPermissions {</span>
+<a name="l7"><span class="ln">7    </span></a>    <span class="s1">@org.jetbrains.annotations.NotNull</span>
+<a name="l8"><span class="ln">8    </span></a>    <span class="s0">public static final </span><span class="s1">com.example.messenger.utils.constants.ConstantsPermissions INSTANCE = </span><span class="s0">null;</span>
+<a name="l9"><span class="ln">9    </span></a>    <span class="s1">@org.jetbrains.annotations.NotNull</span>
+<a name="l10"><span class="ln">10   </span></a>    <span class="s0">private static final </span><span class="s1">java.lang.String[] PERMISSIONS_STORAGE = </span><span class="s0">null;</span>
+<a name="l11"><span class="ln">11   </span></a>    <span class="s1">@org.jetbrains.annotations.NotNull</span>
+<a name="l12"><span class="ln">12   </span></a>    <span class="s0">private static final </span><span class="s1">java.lang.String[] PERMISSIONS_LOCATION = {</span><span class="s3">&quot;android.permission.ACCESS_FINE_LOCATION&quot;</span><span class="s0">, </span><span class="s3">&quot;android.permission.ACCESS_COARSE_LOCATION&quot;</span><span class="s1">}</span><span class="s0">;</span>
+<a name="l13"><span class="ln">13   </span></a>    
+<a name="l14"><span class="ln">14   </span></a>    <span class="s0">private </span><span class="s1">ConstantsPermissions() {</span>
+<a name="l15"><span class="ln">15   </span></a>        <span class="s0">super</span><span class="s1">()</span><span class="s0">;</span>
+<a name="l16"><span class="ln">16   </span></a>    <span class="s1">}</span>
+<a name="l17"><span class="ln">17   </span></a>    
+<a name="l18"><span class="ln">18   </span></a>    <span class="s1">@org.jetbrains.annotations.NotNull</span>
+<a name="l19"><span class="ln">19   </span></a>    <span class="s0">public final </span><span class="s1">java.lang.String[] getPERMISSIONS_STORAGE() {</span>
+<a name="l20"><span class="ln">20   </span></a>        <span class="s0">return null;</span>
+<a name="l21"><span class="ln">21   </span></a>    <span class="s1">}</span>
+<a name="l22"><span class="ln">22   </span></a>    
+<a name="l23"><span class="ln">23   </span></a>    <span class="s1">@org.jetbrains.annotations.NotNull</span>
+<a name="l24"><span class="ln">24   </span></a>    <span class="s0">public final </span><span class="s1">java.lang.String[] getPERMISSIONS_LOCATION() {</span>
+<a name="l25"><span class="ln">25   </span></a>        <span class="s0">return null;</span>
+<a name="l26"><span class="ln">26   </span></a>    <span class="s1">}</span>
+<a name="l27"><span class="ln">27   </span></a><span class="s1">}</span></pre>
+</body>
+</html>

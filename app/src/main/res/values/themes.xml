@@ -1,0 +1,87 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.Messenger" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/main_theme</item>
+        <item name="colorPrimaryVariant">@color/main_theme</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorError">@color/red</item>
+        <item name="colorSecondary">@color/secondary_theme</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorControlNormal">@color/white</item>
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+
+        <item name="android:textViewStyle">@style/DefaultTextStyle</item>
+        <item name="materialButtonStyle">@style/Widget.App.Button</item>
+        <item name="textInputStyle">@style/Widget.App.TextInputLayout</item>
+        <item name="toolbarStyle">@style/ToolbarStyle</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <!-- SearchView -->
+        <item name="autoCompleteTextViewStyle">@style/Widget.MyApp.AutoCompleteTextView.SearchView</item>
+
+        <item name="textAppearanceTitleMedium">@style/TextAppearance.App.TitleMedium</item>
+        <item name="textAppearanceBodySmall">@style/TextAppearance.App.BodySmall</item>
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.App.SmallComponent</item>
+
+        <item name="floatingActionButtonStyle">@style/Widget.App.FloatingActionButton</item>
+
+        <item name="preferenceTheme">@style/Theme.Messenger.PreferenceTheme</item>
+        <item name="switchStyle">@style/Widget.App.Switch</item>
+
+        <item name="android:colorControlActivated">@color/main_theme</item>
+    </style>
+
+
+    <style name="Widget.App.Switch" parent="Widget.Material3.CompoundButton.MaterialSwitch">
+        <item name="android:textAppearance">@style/DefaultTextStyle.MainTheme.Big</item>
+    </style>
+
+    <!-- Style for the PreferenceScreen. -->
+    <style name="Theme.Messenger.PreferenceTheme" parent="PreferenceThemeOverlay.v14.Material">
+        <item name="preferenceScreenStyle">@style/PreferenceScreenStyle</item>
+        <item name="preferenceCategoryStyle">@style/PreferenceCategoryStyle</item>
+        <item name="preferenceStyle">@style/PreferenceStyle</item>
+    </style>
+
+    <!-- Style for the PreferenceScreen background. -->
+    <style name="PreferenceScreenStyle">
+        <item name="android:background">@color/grey</item>
+    </style>
+
+    <!-- Style for the PreferenceCategory. -->
+    <style name="PreferenceCategoryStyle">
+        <item name="android:textColor">@color/main_theme</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout">@layout/category_preference</item>
+    </style>
+
+    <!-- Style for the Preference. -->
+    <style name="PreferenceStyle">
+        <item name="android:textColor">@color/main_theme</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="Widget.App.FloatingActionButton" parent="Widget.Material3.FloatingActionButton.Primary">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.FloatingActionButton</item>
+    </style>
+
+    <style name="ThemeOverlay.App.FloatingActionButton" parent="">
+        <item name="colorContainer">@color/white</item>
+        <item name="colorOnContainer">@color/main_theme</item>
+        <item name="android:elevation">0dp</item>
+    </style>
+
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@color/white</item>
+    </style>
+
+    <style name="Widget.MyApp.AutoCompleteTextView.SearchView" parent="Widget.AppCompat.AutoCompleteTextView">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:textCursorDrawable">@drawable/cursor_white</item>
+    </style>
+
+
+
+
+</resources>

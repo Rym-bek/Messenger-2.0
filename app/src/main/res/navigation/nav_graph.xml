@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentHomePage">
+
+    <fragment
+        android:id="@+id/fragmentHomePage"
+        android:name="com.example.messenger.ui.fragments.FragmentHomePage"
+        android:label="@string/app_name"
+        tools:layout="@layout/home_page">
+        <action
+            android:id="@+id/action_fragmentHomePage_to_editUserProfileFragment"
+            app:destination="@id/editUserProfileFragment" />
+        <action
+            android:id="@+id/action_fragmentHomePage_to_fragmentFindUser"
+            app:destination="@id/fragmentFindUser" />
+        <action
+            android:id="@+id/action_fragmentHomePage_to_welcomePageFragment"
+            app:destination="@id/welcomePageFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_fragmentHomePage_to_findLocationsFragment"
+            app:destination="@id/findLocationsFragment" />
+        <action
+            android:id="@+id/action_fragmentHomePage_to_fragmentUserMessagePage"
+            app:destination="@id/fragmentUserMessagePage" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentFindUser"
+        android:name="com.example.messenger.ui.fragments.FragmentFindUser"
+        android:label="FragmentFindUser"
+        tools:layout="@layout/find_user">
+        <action
+            android:id="@+id/action_fragmentFindUser_to_fragmentUserMessagePage"
+            app:destination="@id/fragmentUserMessagePage" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/editUserProfileFragment"
+        android:name="com.example.messenger.ui.fragments.EditUserProfileFragment"
+        tools:layout="@layout/edit_user_profile"
+        >
+        <action
+            android:id="@+id/action_editUserProfileFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_editUserProfileFragment_to_dialogEditUserProfileExit"
+            app:destination="@id/dialogEditUserProfileExit" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentEditUserNickname"
+        android:name="com.example.messenger.ui.fragments.FragmentEditUserNickname"
+        android:label="FragmentEditUserNickname"
+        tools:layout="@layout/edit_user_nickname"
+        >
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentEditUserName"
+        android:name="com.example.messenger.ui.fragments.FragmentEditUserName"
+        android:label="FragmentEditUserName"
+        tools:layout="@layout/edit_user_name"
+        />
+
+    <fragment
+        android:id="@+id/fragmentEditUserAbout"
+        android:name="com.example.messenger.ui.fragments.FragmentEditUserAbout"
+        android:label="FragmentEditUserAbout"
+        tools:layout="@layout/edit_user_about"
+        />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.messenger.ui.fragments.SettingsFragment"
+        android:label="SettingsFragment"
+        >
+
+        <action
+            android:id="@+id/action_settingsFragment_to_fragmentEditUserAbout"
+            app:destination="@id/fragmentEditUserAbout" />
+        <action
+            android:id="@+id/action_settingsFragment_to_fragmentEditUserName"
+            app:destination="@id/fragmentEditUserName" />
+        <action
+            android:id="@+id/action_settingsFragment_to_fragmentEditUserNickname"
+            app:destination="@id/fragmentEditUserNickname" />
+    </fragment>
+    <dialog
+        android:id="@+id/dialogEditUserProfileExit"
+        android:name="com.example.messenger.ui.dialogs.DialogEditUserProfileExit"
+        android:label="DialogEditUserProfileExit" />
+    <fragment
+        android:id="@+id/countryCodeFragment"
+        android:name="com.example.messenger.ui.fragments.CountryCodeFragment"
+        tools:layout="@layout/country_code_page"
+        />
+    <fragment
+        android:id="@+id/welcomePageFragment"
+        android:name="com.example.messenger.ui.fragments.WelcomePageFragment"
+        android:label="WelcomePageFragment"
+        tools:layout="@layout/welcome_page"
+        >
+        <action
+            android:id="@+id/action_welcomePageFragment_to_loginPageFragment"
+            app:destination="@id/loginPageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginPageFragment"
+        android:name="com.example.messenger.ui.fragments.LoginPageFragment"
+        android:label="LoginPageFragment"
+        tools:layout="@layout/login_page"
+        >
+        <action
+            android:id="@+id/action_loginPageFragment_to_countryCodeFragment"
+            app:destination="@id/countryCodeFragment" />
+        <argument
+            android:name="country"
+            app:argType="string"
+
+            />
+        <argument
+            android:name="code"
+            app:argType="string" />
+        <argument
+            android:name="flag"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_loginPageFragment_to_mailAuthFragment"
+            app:destination="@id/mailAuthFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mailAuthFragment"
+        android:name="com.example.messenger.ui.fragments.MailAuthFragment"
+        tools:layout="@layout/mail_auth"
+        />
+    <fragment
+        android:id="@+id/findLocationsFragment"
+        android:name="com.example.messenger.ui.fragments.FindLocationsFragment"
+        tools:layout="@layout/find_locations"
+        >
+        <action
+            android:id="@+id/action_findLocationsFragment_to_locationDialog"
+            app:destination="@id/locationDialog" />
+        <action
+            android:id="@+id/action_findLocationsFragment_to_fragmentUserMessagePage"
+            app:destination="@id/fragmentUserMessagePage" />
+    </fragment>
+    <dialog
+        android:id="@+id/locationDialog"
+        android:name="com.example.messenger.ui.dialogs.LocationDialog"
+        android:label="LocationDialog"
+        tools:layout="@layout/find_locations_start"
+        />
+    <fragment
+        android:id="@+id/fragmentUserMessagePage"
+        android:name="com.example.messenger.ui.fragments.FragmentUserMessagePage"
+        tools:layout="@layout/user_message_page"
+        />
+
+</navigation>

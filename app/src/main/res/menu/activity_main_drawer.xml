@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:checkableBehavior="single"
+        android:id="@+id/group_main"
+        >
+        <item
+            android:id="@+id/fragmentFindUser"
+            android:icon="@drawable/ic_baseline_search_24"
+            android:title="@string/find_users" />
+        <item
+            android:id="@+id/fragmentMailLogin"
+            android:icon="@drawable/ic_baseline_group_24"
+            android:title="@string/create_group" />
+        <item
+            android:id="@+id/findLocationsFragment"
+            android:icon="@drawable/ic_baseline_social_distance_24"
+            android:title="@string/people_nearby" />
+        <item
+            android:id="@+id/navigation_view_favorites"
+            android:icon="@drawable/ic_baseline_bookmark_border_24"
+            android:title="@string/favorites" />
+        <item
+            android:id="@+id/editUserProfileFragment"
+            android:icon="@drawable/ic_baseline_settings_24"
+            android:title="@string/settings" />
+
+    </group>
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/group_second"
+        >
+        <item
+            android:id="@+id/navigation_view_invite_friends"
+            android:icon="@drawable/ic_baseline_person_add_24"
+            android:title="@string/invite_friends" />
+        <item
+            android:id="@+id/navigation_view_help"
+            android:icon="@drawable/ic_baseline_help_outline_24"
+            android:title="@string/enu_reference" />
+    </group>
+</menu>

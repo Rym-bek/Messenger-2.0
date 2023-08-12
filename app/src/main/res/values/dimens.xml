@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="textSize_20sp">20sp</dimen>
+    <dimen name="textSize_18sp">18sp</dimen>
+    <dimen name="textSize_16sp">16sp</dimen>
+    <dimen name="textSize_14sp">14sp</dimen>
+    <dimen name="textSize_13sp">13sp</dimen>
+    <dimen name="textSize_11sp">11sp</dimen>
+    <dimen name="margin_30dp">30dp</dimen>
+    <dimen name="LoginPage_CustomKeyboard_textSize">25sp</dimen>
+    <dimen name="ButtonsSize">35dp</dimen>
+    <dimen name="ButtonsSizePadding">55dp</dimen>
+    <dimen name="FloatingActionButton_Size_Mini">40dp</dimen>
+    <dimen name="FloatingActionButton_Size_Normal">56dp</dimen>
+    <dimen name="userProfilePaddingBig">20dp</dimen>
+    <dimen name="userProfilePaddingSmall">5dp</dimen>
+    <dimen name="borders_small">15dp</dimen>
+    <dimen name="padding_10dp">10dp</dimen>
+    <dimen name="padding_15dp">15dp</dimen>
+    <dimen name="photo_size">60dp</dimen>
+    <dimen name="dp_350">350dp</dimen>
+    <dimen name="edit_profile_top">40dp</dimen>
+
+</resources>

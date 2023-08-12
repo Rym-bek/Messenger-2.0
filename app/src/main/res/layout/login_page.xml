@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.LoginPage">
+
+    <TextView
+        android:id="@+id/textView_LoginPage_phone_number_static"
+        style="@style/DefaultTextStyle.BoldTextStyle.Big"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="@string/phone_number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_LoginPage_description"
+        style="@style/DefaultTextStyle.Small.Grey.Medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="70dp"
+        android:gravity="center"
+        android:text="@string/phone_number_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_LoginPage_phone_number_static" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout_country"
+        style="@style/DefaultEditTextStyle"
+        android:layout_marginTop="20dp"
+        android:hint="@string/country"
+        app:endIconMode="custom"
+        app:endIconDrawable="@drawable/ic_baseline_arrow_forward_ios_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_LoginPage_description">
+        <com.google.android.material.textfield.TextInputEditText
+            android:textAppearance="@style/DefaultTextStyle.Big"
+            android:id="@+id/textInputEditText_country"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/select_country"
+            android:textColor="@color/black"
+            android:enabled="false"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout_country">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout_code"
+            style="@style/DefaultEditTextStyle"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="0dp"
+            android:layout_weight="2"
+            android:hint="@string/code"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout_country"
+            app:prefixText="+"
+            app:prefixTextAppearance="@style/DefaultTextStyle.Big"
+            app:prefixTextColor="@color/grey">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputEditText_code"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:digits="0123456789 "
+                android:imeOptions="actionNone"
+                android:inputType="numberPassword"
+                android:maxLength="4"
+                android:maxLines="1"
+                android:textAppearance="@style/DefaultTextStyle.Big" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout_number"
+            style="@style/DefaultEditTextStyle"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:hint="@string/phone_number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout_country">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputEditText_number"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:digits="0123456789 "
+                android:imeOptions="actionNone"
+                android:inputType="numberPassword"
+                android:maxLength="15"
+                android:maxLines="1"
+                android:textAppearance="@style/DefaultTextStyle.Big" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:srcCompat="@drawable/ic_baseline_arrow_forward_24" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button"
+        style="@style/Widget.App.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/enter_with_email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

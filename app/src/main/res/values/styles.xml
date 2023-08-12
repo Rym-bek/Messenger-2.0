@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="DefaultEditTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/margin_30dp</item>
+        <item name="android:layout_marginEnd">@dimen/margin_30dp</item>
+    </style>
+
+    <style name="DefaultTextStyle">
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textSize">@dimen/textSize_14sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="DefaultTextStyle.MainTheme">
+        <item name="android:textColor">@color/main_theme</item>
+    </style>
+
+    <style name="DefaultTextStyle.MainTheme.Big">
+        <item name="android:textSize">@dimen/textSize_16sp</item>
+    </style>
+
+    <style name="DefaultTextStyle.BoldTextStyle">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+    </style>
+
+
+    <style name="DefaultTextStyle.BoldTextStyle.Big">
+        <item name="android:textSize">@dimen/textSize_16sp</item>
+    </style>
+
+    <style name="DefaultTextStyle.BoldTextStyle.Big.MainTheme">
+        <item name="android:textColor">@color/main_theme</item>
+    </style>
+
+    <style name="DefaultTextStyle.Small">
+        <item name="android:textSize">@dimen/textSize_13sp</item>
+    </style>
+
+    <style name="DefaultTextStyle.SmallBig">
+        <item name="android:textSize">@dimen/textSize_16sp</item>
+    </style>
+
+    <style name="DefaultTextStyle.Big">
+        <item name="android:textSize">@dimen/textSize_18sp</item>
+    </style>
+
+    <style name="DefaultTextStyle.VeryBig">
+        <item name="android:textSize">@dimen/textSize_22sp</item>
+    </style>
+
+    <style name="DefaultTextStyle.Small.Grey">
+        <item name="android:textColor">@color/grey</item>
+    </style>
+
+    <style name="DefaultTextStyle.Small.Grey.Medium">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+
+
+    <style name="TextAppearance.App.Button" parent="TextAppearance.Material3.LabelLarge">
+        <item name="fontFamily">@font/roboto_bold</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="ShapeAppearance.App.SmallComponent" parent="ShapeAppearance.Material3.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">4dp</item>
+    </style>
+
+
+    <style name="Widget.App.Button.TextButton" parent="Widget.Material3.Button.TextButton">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textAppearance">@style/TextAppearance.App.Button</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.App.SmallComponent</item>
+    </style>
+
+    <style name="Widget.App.Button.OutlinedButton" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.Button.TextButton</item>
+        <item name="android:textAppearance">@style/TextAppearance.App.Button</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.App.SmallComponent</item>
+    </style>
+
+    <style name="Widget.App.Button" parent="Widget.Material3.Button">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAppearance">@style/TextAppearance.App.Button</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.App.SmallComponent</item>
+    </style>
+
+    <style name="ThemeOverlay.App.Button.TextButton" parent="">
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorOnPrimary">@color/white</item>
+    </style>
+
+    <style name="TextAppearance.App.TitleMedium" parent="TextAppearance.Material3.TitleMedium">
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:fontFamily">@font/roboto</item>
+    </style>
+
+    <style name="TextAppearance.App.BodySmall" parent="TextAppearance.Material3.BodySmall">
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:fontFamily">@font/roboto</item>
+    </style>
+
+    <style name="Widget.App.TextInputLayout" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="shapeAppearance">@style/ShapeAppearance.App.SmallComponent</item>
+        <item name="android:textColorHint">?attr/colorPrimary</item>
+        <item name="expandedHintEnabled">false</item>
+        <item name="android:hint">@string/app_name</item>
+        <item name="boxStrokeColor">@color/text_input_layout_stroke_color</item>
+    </style>
+
+    <style name="ToolbarStyle" parent="Widget.Material3.Toolbar">
+        <item name="titleTextAppearance">@style/MyTitleTextAppearance</item>
+        <item name="subtitleTextAppearance">@style/MySubTitleTextAppearance</item>
+        <item name="android:background">?attr/colorPrimary</item>
+    </style>
+
+    <style name="MyTitleTextAppearance" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="MySubTitleTextAppearance" parent="TextAppearance.Widget.AppCompat.Toolbar.Subtitle">
+        <item name="android:textColor">@color/grey</item>
+    </style>
+
+    <style name="InputTextToUser">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:inputType">textMultiLine</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:maxLines">6</item>
+        <item name="android:hint">@string/message</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.App.CornerSize50Percent" parent="">
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="TabIndicatorStyle">
+        <item name="tabIndicatorColor">@color/main_theme</item>
+        <item name="fontFamily">@font/roboto</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="tabRippleColor">@null</item>
+    </style>
+
+    <dimen name="textSize_22sp">22sp</dimen>
+
+    <style name="FullScreenDialog">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:fitsSystemWindows">true</item>
+    </style>
+</resources>

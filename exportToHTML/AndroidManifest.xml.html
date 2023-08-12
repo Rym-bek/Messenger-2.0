@@ -1,0 +1,75 @@
+<html>
+<head>
+<title>AndroidManifest.xml</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #e8bf6a;}
+.s1 { color: #bababa;}
+.s2 { color: #6a8759;}
+.s3 { color: #a9b7c6;}
+.ln { color: #606366; font-weight: normal; font-style: normal; }
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+AndroidManifest.xml</font>
+</center></td></tr></table>
+<pre><a name="l1"><span class="ln">1    </span></a><span class="s0">&lt;?</span><span class="s1">xml version</span><span class="s2">=&quot;1.0&quot; </span><span class="s1">encoding</span><span class="s2">=&quot;utf-8&quot;</span><span class="s0">?&gt;</span>
+<a name="l2"><span class="ln">2    </span></a><span class="s0">&lt;manifest </span><span class="s1">xmlns:android</span><span class="s2">=&quot;http://schemas.android.com/apk/res/android&quot;</span>
+<a name="l3"><span class="ln">3    </span></a>    <span class="s1">package</span><span class="s2">=&quot;com.example.messenger.test&quot; </span><span class="s0">&gt;</span>
+<a name="l4"><span class="ln">4    </span></a>
+<a name="l5"><span class="ln">5    </span></a>    <span class="s0">&lt;uses-sdk</span>
+<a name="l6"><span class="ln">6    </span></a>        <span class="s1">android:minSdkVersion</span><span class="s2">=&quot;23&quot;</span>
+<a name="l7"><span class="ln">7    </span></a>        <span class="s1">android:targetSdkVersion</span><span class="s2">=&quot;33&quot; </span><span class="s0">/&gt;</span>
+<a name="l8"><span class="ln">8    </span></a>
+<a name="l9"><span class="ln">9    </span></a>    <span class="s0">&lt;instrumentation</span>
+<a name="l10"><span class="ln">10   </span></a>        <span class="s1">android:name</span><span class="s2">=&quot;androidx.test.runner.AndroidJUnitRunner&quot;</span>
+<a name="l11"><span class="ln">11   </span></a>        <span class="s1">android:functionalTest</span><span class="s2">=&quot;false&quot;</span>
+<a name="l12"><span class="ln">12   </span></a>        <span class="s1">android:handleProfiling</span><span class="s2">=&quot;false&quot;</span>
+<a name="l13"><span class="ln">13   </span></a>        <span class="s1">android:label</span><span class="s2">=&quot;Tests for com.example.messenger&quot;</span>
+<a name="l14"><span class="ln">14   </span></a>        <span class="s1">android:targetPackage</span><span class="s2">=&quot;com.example.messenger&quot; </span><span class="s0">/&gt;</span>
+<a name="l15"><span class="ln">15   </span></a>
+<a name="l16"><span class="ln">16   </span></a>    <span class="s0">&lt;uses-permission </span><span class="s1">android:name</span><span class="s2">=&quot;android.permission.REORDER_TASKS&quot; </span><span class="s0">/&gt;</span>
+<a name="l17"><span class="ln">17   </span></a>
+<a name="l18"><span class="ln">18   </span></a>    <span class="s0">&lt;queries&gt;</span>
+<a name="l19"><span class="ln">19   </span></a>        <span class="s0">&lt;package </span><span class="s1">android:name</span><span class="s2">=&quot;androidx.test.orchestrator&quot; </span><span class="s0">/&gt;</span>
+<a name="l20"><span class="ln">20   </span></a>        <span class="s0">&lt;package </span><span class="s1">android:name</span><span class="s2">=&quot;androidx.test.services&quot; </span><span class="s0">/&gt;</span>
+<a name="l21"><span class="ln">21   </span></a>        <span class="s0">&lt;package </span><span class="s1">android:name</span><span class="s2">=&quot;com.google.android.apps.common.testing.services&quot; </span><span class="s0">/&gt;</span>
+<a name="l22"><span class="ln">22   </span></a>    <span class="s0">&lt;/queries&gt;</span>
+<a name="l23"><span class="ln">23   </span></a>
+<a name="l24"><span class="ln">24   </span></a>    <span class="s0">&lt;application</span>
+<a name="l25"><span class="ln">25   </span></a>        <span class="s1">android:debuggable</span><span class="s2">=&quot;true&quot;</span>
+<a name="l26"><span class="ln">26   </span></a>        <span class="s1">android:extractNativeLibs</span><span class="s2">=&quot;false&quot; </span><span class="s0">&gt;</span>
+<a name="l27"><span class="ln">27   </span></a>        <span class="s0">&lt;uses-library </span><span class="s1">android:name</span><span class="s2">=&quot;android.test.runner&quot; </span><span class="s0">/&gt;</span>
+<a name="l28"><span class="ln">28   </span></a>
+<a name="l29"><span class="ln">29   </span></a>        <span class="s0">&lt;activity</span>
+<a name="l30"><span class="ln">30   </span></a>            <span class="s1">android:name</span><span class="s2">=&quot;androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity&quot;</span>
+<a name="l31"><span class="ln">31   </span></a>            <span class="s1">android:exported</span><span class="s2">=&quot;true&quot;</span>
+<a name="l32"><span class="ln">32   </span></a>            <span class="s1">android:theme</span><span class="s2">=&quot;@style/WhiteBackgroundTheme&quot; </span><span class="s0">&gt;</span>
+<a name="l33"><span class="ln">33   </span></a>            <span class="s0">&lt;intent-filter </span><span class="s1">android:priority</span><span class="s2">=&quot;-100&quot; </span><span class="s0">&gt;</span>
+<a name="l34"><span class="ln">34   </span></a>                <span class="s0">&lt;category </span><span class="s1">android:name</span><span class="s2">=&quot;android.intent.category.LAUNCHER&quot; </span><span class="s0">/&gt;</span>
+<a name="l35"><span class="ln">35   </span></a>            <span class="s0">&lt;/intent-filter&gt;</span>
+<a name="l36"><span class="ln">36   </span></a>        <span class="s0">&lt;/activity&gt;</span>
+<a name="l37"><span class="ln">37   </span></a>        <span class="s0">&lt;activity</span>
+<a name="l38"><span class="ln">38   </span></a>            <span class="s1">android:name</span><span class="s2">=&quot;androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity&quot;</span>
+<a name="l39"><span class="ln">39   </span></a>            <span class="s1">android:exported</span><span class="s2">=&quot;true&quot;</span>
+<a name="l40"><span class="ln">40   </span></a>            <span class="s1">android:theme</span><span class="s2">=&quot;@style/WhiteBackgroundTheme&quot; </span><span class="s0">&gt;</span>
+<a name="l41"><span class="ln">41   </span></a>            <span class="s0">&lt;intent-filter </span><span class="s1">android:priority</span><span class="s2">=&quot;-100&quot; </span><span class="s0">&gt;</span>
+<a name="l42"><span class="ln">42   </span></a>                <span class="s0">&lt;category </span><span class="s1">android:name</span><span class="s2">=&quot;android.intent.category.LAUNCHER&quot; </span><span class="s0">/&gt;</span>
+<a name="l43"><span class="ln">43   </span></a>            <span class="s0">&lt;/intent-filter&gt;</span>
+<a name="l44"><span class="ln">44   </span></a>        <span class="s0">&lt;/activity&gt;</span>
+<a name="l45"><span class="ln">45   </span></a>        <span class="s0">&lt;activity</span>
+<a name="l46"><span class="ln">46   </span></a>            <span class="s1">android:name</span><span class="s2">=&quot;androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity&quot;</span>
+<a name="l47"><span class="ln">47   </span></a>            <span class="s1">android:exported</span><span class="s2">=&quot;true&quot;</span>
+<a name="l48"><span class="ln">48   </span></a>            <span class="s1">android:theme</span><span class="s2">=&quot;@style/WhiteBackgroundDialogTheme&quot; </span><span class="s0">&gt;</span>
+<a name="l49"><span class="ln">49   </span></a>            <span class="s0">&lt;intent-filter </span><span class="s1">android:priority</span><span class="s2">=&quot;-100&quot; </span><span class="s0">&gt;</span>
+<a name="l50"><span class="ln">50   </span></a>                <span class="s0">&lt;category </span><span class="s1">android:name</span><span class="s2">=&quot;android.intent.category.LAUNCHER&quot; </span><span class="s0">/&gt;</span>
+<a name="l51"><span class="ln">51   </span></a>            <span class="s0">&lt;/intent-filter&gt;</span>
+<a name="l52"><span class="ln">52   </span></a>        <span class="s0">&lt;/activity&gt;</span>
+<a name="l53"><span class="ln">53   </span></a>    <span class="s0">&lt;/application&gt;</span>
+<a name="l54"><span class="ln">54   </span></a>
+<a name="l55"><span class="ln">55   </span></a><span class="s0">&lt;/manifest&gt;</span></pre>
+</body>
+</html>
